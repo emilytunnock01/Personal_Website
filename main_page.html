@@ -40,18 +40,19 @@
 		}
 		
 		#gallery{
-			width: 1000px;
-			margin-left : 230px;
+			width: 75%;
+			margin-left : 15%;
+			margin-right: 5%;
 			background-color: white; 
 			border: 1px solid black;
-			padding : 15px;
+			padding : 5%;
 		}
         #table_contents {
-            font-size: 20px;
-            width: 175px;
+            font-size: 100%;
+            width: 7%;
 			background-color: white;
 		    border: 1px solid black;
-            padding: 15px;
+            padding: 3%;
             float: left;
 			position: fixed;
         }
@@ -61,53 +62,66 @@
 			font-size: 200%;
 
 		}
+		#vert{
+			width : 25%;
+			height: 45%;
+		}
+        #horiz {
+        width : 45%;
+		height : 25%;
+        }
+        #square {
+        width: 35%;
+        height: 35%;
+        }
+
 		</style>
 	</head>
 
 	<body>
 		
-			<div id="table_contents">
-				<a href="https://github.com/emilytunnock01">Github</a>
-				<br />
-				<a href="https://www.linkedin.com/in/emily-tunnock-008b1a26b/"> LinkedIn</a>
-				<br />
-				<a href="https://manhattan.joinhandshake.com/stu/users/34794884"> Handshake</a>
-				<br />
-				Resume
-				<br />
-				<br />
-				Timeline: <br />
-				Dec 2022 <br />
-				Jan 2023 <br />
+		<div id="table_contents">
+			<a href="https://github.com/emilytunnock01">Github</a>
+			<br />
+			<a href="https://www.linkedin.com/in/emily-tunnock-008b1a26b/"> LinkedIn</a>
+			<br />
+			<a href="https://manhattan.joinhandshake.com/stu/users/34794884"> Handshake</a>
+			<br />
+			Resume
+			<br />
+			<br />
+			Gallery <br />
+			<a href="#Ard"> Ardsley </a> <br />
+			<a href="#Hast">  Hastings </a> <br />
 
-			</div>
+		</div>
 
 
 			<div id="gallery">
 
 				<h1 id="heading"> Emily Tunnock's Photo Gallery</h1>
-				<h2> Ardsley Tennis Court <br /> 
+				<h2 id="Ard"> Ardsley Tennis Court <br /> 
 				Minolta XG7 - Ilford HP5 Plus </h2>
 				<h3> December 2022 </h3>
-				<img src="Ardsley/ar_01.jpg" width="600" height="400" onclick="openModal(this.src)">
-				<img src="Ardsley/ar_02.jpg" width="600" height="400" onclick="openModal(this.src)">
-				<img src="Ardsley/ar_03.jpg" width="300" height="400" onclick="openModal(this.src)">
-				<img src="Ardsley/ar_04.jpg" width="600" height="400" onclick="openModal(this.src)">
-				<img src="Ardsley/ar_05.jpg" width="400" height="400" onclick="openModal(this.src)">
-				<img src="Ardsley/ar_06.jpg" width="600" height="400" onclick="openModal(this.src)">
+				<img id ="horiz" src="Ardsley/ar_01.jpg" onclick = "openModal(this.src)">
+				<img id ="horiz" src="Ardsley/ar_02.jpg" onclick="openModal(this.src)">
+				<img id="vert" src="Ardsley/ar_03.jpg"  onclick="openModal(this.src)">
+				<img id ="horiz" src="Ardsley/ar_04.jpg" onclick="openModal(this.src)">
+				<img id ="square" src="Ardsley/ar_05.jpg"onclick="openModal(this.src)">
+				<img id ="horiz" src="Ardsley/ar_06.jpg" onclick="openModal(this.src)">
 
 
-				<h2> Hastings on Hudson <br />
-				Minolta XG7 - Ilford HP5 Plus </h2>
+				<h2> Hastings on Hudson </h2> <br />
+				<h2 id="Hast"> "Minolta XG7 - Ilford HP5 Plus </h2>
 				<h3> January 2023 </h3>
 
-				<img src="Hastings/ha_01.jpg" alt="" width="300" height="400" onclick="openModal(this.src)">
-				<img src="Hastings/ha_02.jpg" alt="" width="600" height="400" onclick="openModal(this.src)">
-				<img src="Hastings/ha_03.jpg" alt="" width="300" height="400" onclick="openModal(this.src)">
-				<img src="Hastings/ha_04.jpg" alt="" width="400" height="400" onclick="openModal(this.src)">
-				<img src="Hastings/ha_05.jpg" alt="" width="600" height="400" onclick="openModal(this.src)">
-				<img src="Hastings/ha_06.jpg" alt="" width="600" height="400" onclick="openModal(this.src)">
-				<img src="Hastings/ha_07.jpg" alt="" width="300" height="400" onclick="openModal(this.src)">
+				<img id="vert" src="Hastings/ha_01.jpg" alt="" onclick="openModal(this.src)">
+				<img id="horiz" src="Hastings/ha_02.jpg" alt="" onclick="openModal(this.src)">
+				<img id="vert" src="Hastings/ha_03.jpg" alt="" onclick="openModal(this.src)">
+				<img id="square" src="Hastings/ha_04.jpg" alt="" onclick="openModal(this.src)">
+				<img id="horiz" src="Hastings/ha_05.jpg" alt="" onclick="openModal(this.src)">
+				<img id="horiz" src="Hastings/ha_06.jpg" alt="" onclick="openModal(this.src)">
+				<img id="vert" src="Hastings/ha_07.jpg" alt="" onclick="openModal(this.src)">
 			</div>
 
 
